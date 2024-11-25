@@ -1,11 +1,10 @@
-package ie.atu.productv3;
-
+package ie.atu.productv4;
 
 
 
 public class ProductDB {
 
-    public static Product  getProduct(String productCode) { // parent class
+    public static Product getProduct(String productCode) { // parent class
     // In a more realistic application, this code would get the data for the product from a file or database
     // For now, this code just uses if/else statements to return the correct product data
 
@@ -56,16 +55,16 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             item = mySoftware;
         }
-        else if(productCode.equalsIgnoreCase("PINK")) {
+        else if(productCode.equalsIgnoreCase("PINK")) {// music data base
             Music myMusic = new Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Wish you were here");
-            myMusic.setArtist("by Pink Flyod");
-            myMusic.setLabel("Part of the Columbia Group");
+            myMusic.setArtist("Pink Flyod");
+            myMusic.setLabel("Columbia Group");
             myMusic.setPrice(8.00);
             item = myMusic;
         }
-        else if(productCode.equalsIgnoreCase("kdl43")){
+        else if(productCode.equalsIgnoreCase("kdl43")){// telly data base
             Tv myTv= new Tv();
             myTv.setCode(productCode);
             myTv.setDescription("SONY BRAVIA SMART TV KDL43WF663");
